@@ -1,0 +1,35 @@
+ul.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.list::after {
+  /* list 이후 float 해제와 줄바꿈처리 */
+  content: '';
+  display: block;
+  clear: both;
+}
+.tab-button {
+  display: block;
+  padding: 20px;
+  float: left;
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+.select {
+  /* 선택된 탭 css */
+  border: 1px solid #ccc;
+  color: black;
+  font-weight: bold;
+
+}
+.tab-content {
+  /* 기본 탭 내용 숨겨둠 */
+  display: none;
+  padding: 10px;
+}
+.show {
+  /* 선택된 탭 내용 표시 */
+  display: block;
+}

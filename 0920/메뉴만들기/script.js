@@ -11,9 +11,23 @@ hamBtn.addEventListener('click', () => {
 });
 
 document.querySelector('#write').addEventListener('click', () => {
-  document.querySelector('.black-bg').classList.add('visi');  
+  // document.querySelector('.black-bg').classList.add('visi');
+  $('.black-bg').fadeIn();  
 });
 
 $('#close').on('click', () => {
-  $('.black-bg').removeClass('visi');
+  // $('.black-bg').removeClass('visi');
+  $('.black-bg').fadeOut(); 
+})
+
+const modeBtn = document.querySelector('#mode');
+
+document.querySelector('#mode').addEventListener('click', () => {
+  document.body.classList.toggle('dark'); // body에 직접적으로 붙여준것이므로 querySelector('.dark') 대신에 body만 써도 됨.
+  
+  if(modeBtn.value == "다크모드") {
+    modeBtn.value = "라이트모드"
+  } else {
+    modeBtn.value = "다크모드"
+  }
 })

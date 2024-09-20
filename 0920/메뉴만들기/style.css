@@ -10,15 +10,19 @@
   background: rgba(0, 0, 0, 0.5);
   padding: 30px;
   
-  /* display: none; */
-  visibility: hidden;
+  display: none;
+  /* visibility: hidden;
   opacity: 0;
-  transition: all 0.3s; /* 창이 시간을 두고 나타났다가 사라짐.*/
+  height: 0%;
+  overflow: hidden;
+  transition: all 0.3s; 창이 시간을 두고 나타났다가 사라짐. */
 }
 
 .visi {
   visibility: visible;
   opacity: 1;
+  overflow: hidden;
+  height: 100%;
 }
 
 .show {
@@ -30,4 +34,9 @@
   background: white;
   border-radius: 10px;
   padding: 20px;
+}
+
+.dark {
+  background: black;
+  color: white;
 }
