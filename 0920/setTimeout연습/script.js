@@ -25,3 +25,5 @@ document.querySelector('.btn').addEventListener('click', () => {
   //그래서 이런 경우에 성능이 떨어질 수 있음.
 
 });
+
+console.log('그냥 추가함');
