@@ -1,0 +1,8 @@
+.alert-box {
+  background: skyblue;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: none; 
+  /* display가 none이면 영역도 차지 안하고 그냥 사라짐. */
+}

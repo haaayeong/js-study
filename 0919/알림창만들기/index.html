@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- html/ css로 기본 틀을 생성한 후 js로 각 기능들을 추가해야함. -->
+  <div id="ab" class="alert-box">
+    알림창
+    <!-- <button onclick="hide()">X</button> -->
+     <button onclick="showHide('none')">X</button>
+     <!-- onclick하면 click 했을 때 어떻게 할지 설정 가능. -->
+     <!-- 괄호안에 매개변수를 써서 보내줌. -->
+  </div>
+
+  <!-- <button onclick="show()">알림창열기</button> -->
+   <button onclick="showHide('block')">알림창열기</button>
+
+   <div class="alert-box"></div>
+
+    <div>
+      <button onclick="showBox('알림창 1번입니다.')">알림창1</button>
+      <button onclick="showBox('알림창 2번입니다.')">알림창2</button>
+      <button onclick="showBox('알림창 3번입니다.')">알림창3</button>
+      <button class="close" onclick="closeBox()">닫기</button>
+    </div>
+
+  <!-- jQuery cdn minified-->
+  <!-- jQuery
+   자바 스크립트 코드를 훨씬 간단하게 축약해서 사용할 수 있도록 도와줌.
+   js코드 바로 위에 적어줘야함.  -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>  
+  <script src="script.js"></script>
+</body>
+</html>
